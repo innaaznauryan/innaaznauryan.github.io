@@ -4,3 +4,4 @@ title = 'My New Hugo Site'
 theme = 'hugo-theme-terminal-master'
 paginate = 5
 publishDir = "docs"
+assetsDir = "public"
