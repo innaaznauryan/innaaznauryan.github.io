@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Users/User/Desktop/Hugo theme/innaaznauryan.github.io/o11ycloud",
+	"sourceRoot": "C:/Users/User/Desktop/HugoTheme/innaaznauryan.github.io/o11ycloud",
 	"sources": [
 		"css/base.scss",
 		"themes/hugo-theme-terminal-master/assets/css/variables.scss",
