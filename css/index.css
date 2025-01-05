@@ -1,0 +1,36 @@
+:root {
+    --bg-color: #070508;
+    --text-color: #00ff88;
+    --accent-color: #007755;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--bg-color);
+    background-image: url('/images/background-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+img, a {
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+::selection {
+    background-color: #808080;
+    color: #ffffff;
+}

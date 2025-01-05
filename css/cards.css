@@ -1,0 +1,93 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin: 10px;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 1rem;
+            color: var(--accent-color);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .img-container {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 auto 10px;
+            color: var(--accent-color);
+        }
+
+        img {
+            width: 30px;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .card {
+        h4 {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        h4 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+        a img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
