@@ -28,6 +28,9 @@
             color: var(--accent-color);
             margin: 10px;
             text-align: center;
+            a {
+                color: var(--accent-color);
+            }
         }
 
         h5 {
@@ -44,19 +47,24 @@
 
         .img-container {
             text-align: center;
-        }
 
-        a {
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 auto 10px;
-            color: var(--accent-color);
-        }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 auto 10px;
+                img {
+                    transition: transform 0.3s ease;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
 
-        img {
-            width: 30px;
-            aspect-ratio: 1;
-            object-fit: contain;
+            img {
+                width: 30px;
+                aspect-ratio: 1;
+                object-fit: contain;
+            }
         }
     }
 }
@@ -84,10 +92,6 @@
         }
         p {
             font-size: 0.9rem;
-        }
-        a img {
-            width: 28px;
-            height: 28px;
         }
     }
 }

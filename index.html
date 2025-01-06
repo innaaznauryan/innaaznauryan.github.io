@@ -5,28 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="./css/languages.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script defer src="./js/script.js"></script>
     <title>Inna Aznauryan Portfolio</title>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section class="about" id="about">
+<header class="about" id="about">
     <h1>
         <span>I</span>
         <span>n</span>
@@ -45,7 +33,7 @@
     <h2>Front-End Web Developer</h2>
     <p>I am a dedicated Front-End Web Developer and JavaScript enthusiast. Passionate about crafting user-friendly web interfaces.</p>
     <a href="#contact">Get In Touch</a>
-</section>
+</header>
 
 <section class="skills" id="skills">
     <h3>Skills</h3>
@@ -229,41 +217,52 @@
 
 <section class="languages" id="languages">
     <h3>Languages</h3>
-    <ul>
-        <li>Armenian - Native</li>
-        <li>English - Fluent</li>
-        <li>Russian - Native</li>
-    </ul>
+    <div>
+        <span>Armenian (Native)</span>
+        <progress value="100" max="100"></progress>
+    </div>
+    <div>
+        <span>Russian (Bilingual)</span>
+        <progress value="100" max="100"></progress>
+    </div>
+    <div>
+        <span>English (Fluent)</span>
+        <progress value="90" max="100"></progress>
+    </div>
 </section>
 
 <footer id="contact">
     <div class="footer-container">
         <p>
-            <span>Linkedin:</span>
             <a href="https://linkedin.com/in/inna-aznauryan" target="_blank">
                 <img src="./images/linkedin.png" alt="linkedin">
             </a>
+            <span>Linkedin</span>
         </p>
         <p>
-            <span>GitHub:</span>
             <a href="https://github.com/innaaznauryan" target="_blank">
                 <img src="images/github.png" alt="github">
             </a>
+            <span>GitHub</span>
         </p>
         <p>
-            <span>Email: inna.aznauryan@gmail.com</span>
             <a href="mailto:inna.aznauryan@gmail.com">
                 <img src="./images/email.png" alt="email">
             </a>
+            <span>inna.aznauryan@gmail.com</span>
         </p>
         <p>
-            <span>Phone: +37493629370</span>
             <a href="tel:+37493629370">
                 <img src="./images/phone.png" alt="phone">
             </a>
+            <span>+37493629370</span>
         </p>
-        <p>© <span id="year"></span> Coded by Inna Aznauryan</p>
+        <p>
+            <img src="./images/clock.png" alt="clock">
+            <span id="local-time">Local Time: GMT+4</span>
+        </p>
     </div>
+    <p class="copyright">© <span id="copyright-year"></span> Coded by Inna Aznauryan</p>
 </footer>
 </body>
 </html>

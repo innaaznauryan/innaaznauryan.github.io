@@ -3,18 +3,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px;
     height: 100vh;
-    padding-top: 60px;
     text-align: center;
+    @media(max-width: 768px){
+        height: 70vh;
+    }
 
     h1 {
         font-size: 2.5rem;
+        @media(max-width: 768px){
+            font-size: 1.8rem;
+        }
+        @media(max-width: 480px){
+            font-size: 1.4rem;
+        }
 
         span {
             display: inline-block;
             transform: translateY(-150%);
             opacity: 0;
-            animation: fadeInDown 1.3s ease forwards;
+            animation: fadeInDown 5s ease forwards infinite;
         }
     }
 
@@ -60,7 +69,10 @@
 
     h2 {
         font-size: 1.8rem;
-        animation: slideLeft 1s ease forwards;
+        animation: slideLeft 5s ease forwards infinite;
+        @media(max-width: 768px){
+            font-size: 1.2rem;
+        }
     }
 
     p {
@@ -68,7 +80,7 @@
         margin-top: 10px;
         max-width: 600px;
         text-wrap: balance;
-        animation: slideRight 1s ease forwards;
+        animation: slideRight 5s ease forwards infinite;
     }
 
     a {
@@ -95,6 +107,10 @@
         transform: translateY(-150%);
         opacity: 0;
     }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -102,22 +118,30 @@
 }
 
 @keyframes slideLeft {
-    from {
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    to {
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes slideRight {
-    from {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    to {
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
         transform: translateX(0);
         opacity: 1;
     }

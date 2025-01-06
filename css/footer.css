@@ -7,18 +7,30 @@ footer {
     .footer-container {
         max-width: fit-content;
         margin: 0 auto;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 4px;
+            color: var(--text-color);
+
+            img {
+                width: 20px;
+                aspect-ratio: 1;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 
-    p {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+    .copyright {
+        padding-top: 20px;
+        font-size: 1rem;
+        text-align: center;
         color: var(--text-color);
-    }
-
-    img {
-        width: 20px;
-        aspect-ratio: 1;
-        object-fit: contain;
     }
 }

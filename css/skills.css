@@ -1,0 +1,44 @@
+.skills {
+    img {
+        width: 30px;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        animation: slideIn 10s linear forwards infinite;
+
+        li {
+            background-color: transparent;
+            align-content: center;
+            margin: 10px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(10%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

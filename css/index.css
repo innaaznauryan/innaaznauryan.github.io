@@ -30,7 +30,24 @@ img, a {
     -ms-user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 ::selection {
     background-color: #808080;
     color: #ffffff;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 50px;
+    @media(max-width: 480px){
+        padding: 20px;
+    }
 }
