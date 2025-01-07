@@ -1,6 +1,9 @@
 .languages div {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 360px;
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
     gap: 6px;
     padding: 6px;
@@ -15,27 +18,23 @@ progress {
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 6px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #5faf5f;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #00ff88;
+    background-color: #5faf5f;
     border-radius: 6px;
     overflow: hidden;
 }
 
 progress::-webkit-progress-value {
-    background-color: #007755;
+    background-color: #0d3b0d;
     border-radius: 6px;
 }
 
 progress::-moz-progress-bar {
-    background-color: #007755;
+    background-color: #0d3b0d;
     border-radius: 6px;
-}
-
-progress {
-    background-color: #00ff88;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
 }

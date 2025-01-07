@@ -6,12 +6,14 @@
     gap: 6px;
     height: 100vh;
     text-align: center;
+    overflow: hidden;
     @media(max-width: 768px){
         height: 70vh;
     }
 
     h1 {
         font-size: 2.5rem;
+        margin: 1rem;
         @media(max-width: 768px){
             font-size: 1.8rem;
         }
@@ -75,12 +77,17 @@
         }
     }
 
-    p {
-        font-size: 1.2rem;
+    q {
+        font-size: 1rem;
         margin-top: 10px;
         max-width: 600px;
         text-wrap: balance;
-        animation: slideRight 5s ease forwards infinite;
+        &:nth-child(odd) {
+            animation: slideRight 5s ease forwards infinite;
+        }
+        &:nth-child(even) {
+            animation: slideLeft 5s ease forwards infinite;
+        }
     }
 
     a {
@@ -88,16 +95,16 @@
         margin-top: 20px;
         padding: 10px 20px;
         font-size: 1.2rem;
-        color: var(--bg-color);
-        background: var(--accent-color);
-        border: 1px solid var(--accent-color);
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        border: 1px solid var(--text-color);
         text-decoration: none;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 
         &:hover {
-            background: var(--bg-color);
-            color: var(--accent-color);
+            background-color: var(--text-color);
+            color: var(--bg-color);
         }
     }
 }
@@ -107,7 +114,7 @@
         transform: translateY(-150%);
         opacity: 0;
     }
-    50% {
+    10% {
         transform: translateY(0);
         opacity: 1;
     }
