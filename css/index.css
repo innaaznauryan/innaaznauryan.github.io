@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #070508;
-    --text-color: #5faf5f;
-    --accent-color: #0d3b0d;
+    --bg-color: hsl(270, 22%, 2%);
+    --text-color: hsl(120, 33%, 57%);
+    --accent-color: hsl(120, 59%, 14%);
 }
 
 * {
@@ -14,11 +14,16 @@
 body {
     font-family: monospace;
     background-color: var(--bg-color);
-    background-image: url('/images/background-image.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     color: var(--text-color);
     overflow-x: hidden;
+}
+
+canvas {
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 img, a {
