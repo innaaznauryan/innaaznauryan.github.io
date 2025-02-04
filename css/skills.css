@@ -14,13 +14,36 @@
         animation: slideIn 10s linear forwards infinite;
 
         li {
+            position: relative;
             background-color: transparent;
             align-content: center;
-            margin: 10px;
+            padding: 4px 10px;
             transition: transform 0.3s ease;
+
+            .tooltip {
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                visibility: hidden;
+                background-color: #000;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                padding: 4px;
+                font-size: 8px;
+                white-space: nowrap;
+                pointer-events: none;
+                transition: opacity 0.3s ease;
+            }
 
             &:hover {
                 transform: scale(1.5);
+                .tooltip {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
