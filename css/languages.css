@@ -20,22 +20,22 @@ progress {
     height: 6px;
     width: 100%;
     border-radius: 6px;
-    background-color: hsl(120, 33%, 57%);
+    background-color: var(--card-color);
     border: 0;
 }
 
 progress::-webkit-progress-bar {
-    background-color: hsl(120, 33%, 57%);
+    background-color: var(--card-color);
     border-radius: 6px;
     overflow: hidden;
 }
 
 progress::-webkit-progress-value {
-    background-color: hsl(120, 59%, 14%);
+    background-color: var(--accent-color);
     border-radius: 6px;
 }
 
 progress::-moz-progress-bar {
-    background-color: hsl(120, 59%, 14%);
+    background-color: var(--accent-color);
     border-radius: 6px;
 }

@@ -1,7 +1,8 @@
 :root {
-    --bg-color: hsl(270, 22%, 2%);
-    --text-color: hsl(120, 33%, 57%);
-    --accent-color: hsl(120, 59%, 14%);
+    --bg-color: hsl(220, 20%, 8%);
+    --card-color: hsl(220, 20%, 12%);
+    --text-color: hsl(0, 0%, 92%);
+    --accent-color: hsl(145, 70%, 55%);
 }
 
 * {
@@ -54,5 +55,41 @@ section {
     padding: 50px;
     @media(max-width: 480px){
         padding: 20px;
+    }
+}
+
+.tooltip-container {
+    position: relative;
+
+    .tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        background-color: #000;
+        color: #fff;
+        border-radius: 4px;
+        padding: 4px;
+        margin-bottom: 4px;
+        font-size: 8px;
+        white-space: nowrap;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+        .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.scale-on-hover {
+        transition: transform 0.3s ease;
+    }
+    &.scale-on-hover:hover {
+        transform: scale(1.3);
     }
 }
