@@ -49,12 +49,14 @@
         }
 
         .img-container {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
 
             a {
                 text-decoration: none;
                 display: inline-block;
-                margin: 0 auto 10px;
             }
 
             img {
