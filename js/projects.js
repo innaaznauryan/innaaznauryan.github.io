@@ -23,29 +23,6 @@ const projects = [
     ],
   },
   {
-    title: "Healthcare Facilities",
-    description: "A modern medical management app featuring CRUD operations.",
-    stack: [
-      { name: "vue", image: "./images/vue.svg" },
-      { name: "typescript", image: "./images/typescript.svg" },
-      { name: "tailwind", image: "./images/tailwind.svg" },
-    ],
-    links: [
-      {
-        label: "View GitHub",
-        url: "https://github.com/innaaznauryan/healthcare",
-        icon: "./images/github.png",
-        iconAlt: "github"
-      },
-      {
-        label: "View Live",
-        url: "https://healthcare-departments.netlify.app/",
-        icon: "./images/netlify.svg",
-        iconAlt: "netlify"
-      },
-    ],
-  },
-  {
     title: "Typeracer",
     description: "Challenge yourself to type words or phrases as quickly and accurately as possible, improving your typing skills while having fun!",
     stack: [
